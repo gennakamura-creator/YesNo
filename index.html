@@ -1,0 +1,431 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    body {background-color: #f9f9f9}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; -webkit-text-stroke: #000000; min-height: 15.0px}
+    span.s1 {font: 22.0px '.AppleJapaneseFont'; font-kerning: none}
+    span.s2 {font-kerning: none}
+  </style>
+</head>
+<body>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;!doctype html&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;html lang="ja"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;head&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;meta charset="utf-8" /&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width,initial-scale=1" /&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;title&gt;レセスタ 導入前チェック&lt;/title&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;style&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>:root { --bg:#f7f7f8; --card:#fff; --border:#e3e3e7; --text:#111; --muted:#666; }</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>* { box-sizing: border-box; }</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>body {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>margin: 0;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", sans-serif;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>background: var(--bg);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>color: var(--text);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>/* 上段（質問表示エリア） */</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>.stage {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>min-height: 100vh;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>display: grid;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>grid-template-rows: 1fr auto;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>.content {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>padding: 22px 18px 120px; /* 下段ボタン分の余白 */</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>display: flex;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>justify-content: center;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>align-items: flex-start; /* 上寄り */</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>.wrap { width: min(880px, 100%); }</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>.header {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>display: flex;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>justify-content: space-between;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>align-items: baseline;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>gap: 10px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>margin: 6px 2px 10px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>color: var(--muted);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>font-size: 13px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>.card {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>background: var(--card);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>border-radius: 18px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>padding: 18px 16px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>box-shadow: 0 4px 18px rgba(0,0,0,0.05);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>.title {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>margin: 0 0 10px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>font-size: 20px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>line-height: 1.35;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>letter-spacing: 0.2px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>.detail {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>margin: 0;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>color: #222;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>line-height: 1.65;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>white-space: pre-wrap;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>.note {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>margin-top: 12px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>font-size: 12px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>color: var(--muted);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>line-height: 1.55;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>/* 下段（固定ボタンバー） */</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>.footerBar {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>position: fixed;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>left: 0; right: 0; bottom: 0;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>padding: 12px 14px 18px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>background: rgba(247,247,248,0.92);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>backdrop-filter: blur(8px);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>border-top: 1px solid var(--border);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>.footerInner {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>width: min(880px, 100%);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>margin: 0 auto;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>display: grid;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>grid-template-columns: 1fr 1fr;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>gap: 10px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>button {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>appearance: none;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>background: #fff;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>border-radius: 14px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>padding: 14px 12px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>font-size: 16px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>font-weight: 650;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>cursor: pointer;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>box-shadow: 0 2px 10px rgba(0,0,0,0.04);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>button:hover { filter: brightness(0.98); }</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>button:active { transform: translateY(1px); }</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>.secondaryRow {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>margin-top: 10px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>display: flex;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>gap: 10px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>.secondaryRow button {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>font-weight: 600;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>font-size: 14px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>padding: 10px 12px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>border-radius: 12px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>box-shadow: none;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>.hidden { display: none !important; }</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>.error {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>margin-top: 10px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>color: #b00020;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>font-size: 13px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>white-space: pre-wrap;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/style&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;/head&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;body&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;div class="stage"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;div class="content"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="wrap"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div class="header"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;div&gt;↓＝Yes ／ →＝No&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;div&gt;現在: &lt;span id="nodeId"&gt;-&lt;/span&gt;&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div class="card"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;h1 id="qTitle" class="title"&gt;&lt;/h1&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;p id="qDetail" class="detail"&gt;&lt;/p&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;div id="qNote" class="note"&gt;&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;div id="err" class="error"&gt;&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;!-- 下段固定ボタン --&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;div class="footerBar"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="footerInner"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;button id="yesBtn"&gt;Yes（↓）&lt;/button&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;button id="noBtn"&gt;No（→）&lt;/button&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="wrap" style="width:min(880px,100%);margin:10px auto 0;"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div class="secondaryRow"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;button id="restartBtn" class="hidden"&gt;最初から&lt;/button&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;button id="backBtn"&gt;ひとつ戻る&lt;/button&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;script&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>/**</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">   </span>* フロー定義（あなたの内容を反映）</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">   </span>* - type: "question" は yesTo / noTo が必要</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">   </span>* - type: "outcome" は結論ノード（ボタンは「最初から」を出す）</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">   </span>*</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">   </span>* text: 1行目を「タイトル」、2行目以降を「詳細」として表示します。</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">   </span>*/</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>const FLOW = {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>startId: "q1",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>nodes: {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>q1: {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>id: "q1",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>type: "question",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>text:</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>`レセスタの推奨環境のPCはありますか？</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>【推奨環境】</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>・最新OS</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>・電カル・レセコン同居不可</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>・その他 推奨環境に準拠`,</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>yesTo: "q2",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>noTo: "m1_no"</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>},</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>m1_no: {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>id: "m1_no",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>type: "outcome",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>text:</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>`推奨環境のPCを用意して次にお進みください</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>（推奨環境のPCをご用意後、最初からやり直してください）`</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>},</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>q2: {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>id: "q2",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>type: "question",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>text:</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>`利用予定の端末はインターネットに接続されていますか？`,</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>yesTo: "q3",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>noTo: "m2_no"</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>},</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>m2_no: {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>id: "m2_no",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>type: "outcome",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>text:</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>`インターネット環境を整えてください</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>（整ったら最初からやり直してください）`</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>},</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>q3: {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>id: "q3",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>type: "question",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>text:</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>`電子カルテ・レセコンと同居して使用しますか？`,</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>yesTo: "m3_yes",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>noTo: "q4"</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>},</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>m3_yes: {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>id: "m3_yes",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>type: "outcome",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>text:</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>`同居利用の注意点</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>電カル：ホワイトリスト対応</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>レセコン：オンライン請求端末は推奨しておりません</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>別端末でのご利用を推奨しております</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>ご使用の場合は証明書の選択誤りにご注意ください`,</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>},</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>q4: {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>id: "q4",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>type: "question",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>text:</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>`レセスタではメール登録が必要ですが、メールアドレスはありますか？</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>【注意】</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>・携帯キャリアのメールは不可です</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>・Yahoo / Google などは利用できます</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>【例】XXX@docomo… / xxx@ezweb…`,</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>yesTo: "q5",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>noTo: "m4_no"</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>},</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>m4_no: {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>id: "m4_no",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>type: "outcome",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>text:</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>`携帯ではないメールアドレスを作成してください</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>（作成後、最初からやり直してください）`</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>},</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>q5: {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>id: "q5",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>type: "question",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>text:</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>`使用予定の端末でそのメールを確認できますか？`,</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>yesTo: "q6",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>noTo: "m5_no"</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>},</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>m5_no: {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>id: "m5_no",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>type: "outcome",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>text:</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>`メール受信のお願い</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>レセスタより「タイトル」のメールが届きますので、</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>添付ファイルを解凍して使用する端末に移動してください。</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>可能ならレセスタを使用するPCでメール受信できるよう</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>設定してください`</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>},</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>q6: {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>id: "q6",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>type: "outcome",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>text:</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>`お疲れ様でした（導入前チェック完了）</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>（導入フローへ進む場合は案内をご確認ください）`</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>},</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>q7: {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>id: "q7",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>type: "outcome",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>text:</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>`導入・運用開始のご案内</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>レセスタは縦覧点検に対応しています。</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>レセプト提出時のレセプトデータ（点検用）を</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>過去6ヶ月分程度ご準備ください。`</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>};</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>// 「結果(outcome)」表示後に次へ進めたい場合の自動遷移先</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>// 例：m3_yes を見せた後 q4 へ、など</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>const OUTCOME_NEXT = {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>m3_yes: "q4",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>m5_no: "q6",</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>q6: "q7"<span class="Apple-converted-space">  </span>// 完了→案内</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>};</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>// ---- app ----</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>const $ = (id) =&gt; document.getElementById(id);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>const nodeIdEl = $("nodeId");</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>const qTitleEl = $("qTitle");</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>const qDetailEl = $("qDetail");</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>const qNoteEl = $("qNote");</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>const errEl = $("err");</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>const yesBtn = $("yesBtn");</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>const noBtn = $("noBtn");</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>const restartBtn = $("restartBtn");</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>const backBtn = $("backBtn");</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>const historyStack = [];</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>let currentId = FLOW.startId;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>function getNode(id) { return FLOW.nodes[id] || null; }</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>function validateFlowOnce() {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>const errors = [];</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>if (!FLOW.startId || !getNode(FLOW.startId)) errors.push(`startId "${FLOW.startId}" が存在しません`);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>for (const [id, n] of Object.entries(FLOW.nodes)) {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>if (!n.text) errors.push(`"${id}" の text が空です`);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>if (n.type === "question") {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>if (!n.yesTo || !getNode(n.yesTo)) errors.push(`"${id}" の yesTo が不正（${n.yesTo}）`);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>if (!n.noTo<span class="Apple-converted-space">  </span>|| !getNode(n.noTo))<span class="Apple-converted-space">  </span>errors.push(`"${id}" の noTo が不正（${n.noTo}）`);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>return errors;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>function splitText(text) {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>const lines = String(text || "").split("\n");</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>const title = (lines.shift() || "").trim();</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>const detail = lines.join("\n").trim();</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>return { title, detail };</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>function showNode(id, pushHistory = true) {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>const n = getNode(id);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>if (!n) {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>errEl.textContent = `ノードが見つかりません: ${id}`;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>return;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>errEl.textContent = "";</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>if (pushHistory &amp;&amp; currentId) historyStack.push(currentId);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>currentId = id;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>nodeIdEl.textContent = id;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>const { title, detail } = splitText(n.text);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>qTitleEl.textContent = title || "（無題）";</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>qDetailEl.textContent = detail;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>// UI切り替え</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>if (n.type === "question") {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>yesBtn.classList.remove("hidden");</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>noBtn.classList.remove("hidden");</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>restartBtn.classList.add("hidden");</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>qNoteEl.textContent = "下の Yes / No を選択してください。";</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>} else {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>yesBtn.classList.add("hidden");</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>noBtn.classList.add("hidden");</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>restartBtn.classList.remove("hidden");</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>const next = OUTCOME_NEXT[id];</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>qNoteEl.textContent = next</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>? "内容を確認したら「最初から」または「ひとつ戻る」で調整できます。"</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>: "「最初から」で再実行できます。";</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>function jump(nextId) {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>showNode(nextId, true);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>// handlers</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>yesBtn.addEventListener("click", () =&gt; {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>const n = getNode(currentId);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>if (!n || n.type !== "question") return;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>jump(n.yesTo);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>});</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>noBtn.addEventListener("click", () =&gt; {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>const n = getNode(currentId);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>if (!n || n.type !== "question") return;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>jump(n.noTo);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>});</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>restartBtn.addEventListener("click", () =&gt; {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>historyStack.length = 0;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>showNode(FLOW.startId, false);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>});</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>backBtn.addEventListener("click", () =&gt; {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>const prev = historyStack.pop();</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>if (!prev) return;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>showNode(prev, false);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>});</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>// init</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>const errs = validateFlowOnce();</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>if (errs.length) {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>errEl.textContent = "設定エラー:\n" + errs.join("\n");</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>showNode(FLOW.startId, false);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000; min-height: 26.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>// outcome を「自動で次へ」したい場合は、ここでタイマー実装も可能（今回は要望にないので無し）</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;/script&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;/body&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.0px 'Hiragino Sans'; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;/html&gt;</b></span></h1>
+<p class="p3"><span class="s2"></span><br></p>
+</body>
+</html>
