@@ -30,20 +30,21 @@
       color:var(--text);
     }
 
+    /* ✅ 全体を“真ん中”寄せ（縦も中央寄り） */
     .page{
       min-height:100vh;
       display:flex;
       justify-content:center;
+      align-items:center;       /* ← 縦中央寄せ */
       padding:24px 16px;
     }
     .wrap{ width:min(880px,100%); }
 
     .header{
       display:flex;
-      justify-content:space-between;
-      align-items:baseline;
+      justify-content:flex-end; /* 左の案内を消したので右寄せのみ */
       gap:12px;
-      margin:6px 2px 10px;
+      margin:0 2px 10px;
       font-size:13px;
       color:var(--muted);
     }
@@ -52,7 +53,7 @@
       background:var(--card);
       border:1px solid var(--border);
       border-radius:18px;
-      padding:20px 18px;
+      padding:22px 18px;
       box-shadow:0 4px 18px rgba(0,0,0,0.05);
     }
 
@@ -60,11 +61,13 @@
       margin:0 0 12px;
       font-size:20px;
       line-height:1.35;
+      text-align:center;       /* 中央寄せ */
     }
     .detail{
       margin:0;
       line-height:1.65;
       white-space:pre-wrap;
+      text-align:left;         /* 文章は左の方が読みやすいので維持 */
     }
 
     .note{
@@ -72,9 +75,10 @@
       font-size:12px;
       color:var(--muted);
       line-height:1.55;
+      text-align:center;       /* 中央寄せ */
     }
 
-    /* ✅ ボタンを「真ん中寄り（カード直下）」に */
+    /* ✅ ボタンをカード直下・中央に */
     .actionArea{
       margin-top:18px;
       display:grid;
@@ -110,6 +114,7 @@
       display:flex;
       gap:10px;
       flex-wrap:wrap;
+      justify-content:center;  /* 中央寄せ */
     }
     .secondary button{
       font-size:14px;
@@ -119,6 +124,7 @@
       background:#fff;
       flex:1;
       min-width:160px;
+      max-width:240px;
     }
 
     .hidden{ display:none !important; }
@@ -128,11 +134,14 @@
       font-size:13px;
       color:#B00020;
       white-space:pre-wrap;
+      text-align:left;
     }
 
     @media (max-width:520px){
       .actionArea{ grid-template-columns:1fr; }
-      .secondary button{ min-width:unset; }
+      .secondary button{ min-width:unset; max-width:none; }
+      .title{ text-align:left; } /* スマホは左の方が読みやすい場合が多いので */
+      .note{ text-align:left; }
     }
   </style>
 </head>
@@ -141,7 +150,6 @@
   <div class="page">
     <div class="wrap">
       <div class="header">
-        <div>↓＝Yes ／ →＝No</div>
         <div>現在: <span id="nodeId">-</span></div>
       </div>
 
@@ -151,13 +159,12 @@
         <div id="qNote" class="note"></div>
         <div id="err" class="error"></div>
 
-        <!-- ✅ 真ん中寄りのYes/No -->
         <div class="actionArea">
-          <button id="yesBtn" class="yesBtn">Yes（↓）</button>
-          <button id="noBtn" class="noBtn">No（→）</button>
+          <!-- ✅ （↓）（→）を削除 -->
+          <button id="yesBtn" class="yesBtn">Yes</button>
+          <button id="noBtn" class="noBtn">No</button>
         </div>
 
-        <!-- outcome時の操作（次へ/最初から/戻る） -->
         <div class="secondary">
           <button id="nextBtn" class="hidden">次へ</button>
           <button id="restartBtn" class="hidden">最初から</button>
@@ -168,11 +175,6 @@
   </div>
 
 <script>
-  /**
-   * フロー定義
-   * - question: Yes/Noで分岐
-   * - outcome : 注意・案内・完了（次へ or 最初から）
-   */
   const FLOW = {
     startId: "q1",
     nodes: {
@@ -291,16 +293,12 @@
     }
   };
 
-  /**
-   * outcome表示後に「次へ」で進める遷移
-   */
   const OUTCOME_NEXT = {
     m3_yes: "q4",
     m5_no: "q6",
     q6: "q7"
   };
 
-  // ---- app ----
   const $ = (id) => document.getElementById(id);
 
   const nodeIdEl  = $("nodeId");
@@ -375,13 +373,11 @@
 
     if (n.type === "question") {
       setButtons("question", false);
-      qNoteEl.textContent = "Yes / No を選択してください。";
+      qNoteEl.textContent = "";
     } else {
       const next = OUTCOME_NEXT[id];
       setButtons("outcome", !!next);
-      qNoteEl.textContent = next
-        ? "内容を確認したら「次へ」で進んでください。"
-        : "「最初から」で再実行できます。";
+      qNoteEl.textContent = next ? "" : "";
     }
   }
 
